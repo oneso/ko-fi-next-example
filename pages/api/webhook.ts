@@ -16,4 +16,8 @@ export default kofi({
     onSubscription: (data, req) => {
         console.log('onSubscription called');
     },
+    onError: (err, req) => {
+        console.error('onError called');
+    },
+    verificationToken: 'token',
 });
